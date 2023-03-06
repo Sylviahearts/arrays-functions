@@ -46,6 +46,22 @@ let fruit = ['apple', 'mango', 'banana'];
 
         //the value of fruit will be [ 'apple', 'mango', 'orange' ]
 
+		//question 4
+		//Write a function that accepts an array of numbers as an argument. Return the maximum value in the array.
+		function maxValue(arr) {
+			let max = arr[0];
+			for (let i = 1; i < arr.length; i++) {
+			  if (arr[i] > max) {
+				max = arr[i];
+			  }
+			}
+			return max;
+		  }
+
+		  let value = [ 1, 2,3,4]
+		  let result2 =maxValue(value)
+		  console.log(result2)
+
 
         //question 5
 		//Write a function called valTimesIndex which accepts an array of numbers and returns 
@@ -58,3 +74,11 @@ let fruit = ['apple', 'mango', 'banana'];
 		// 	return newArr;
 		//   }
 		//   console.log(newArr(1,2,3,4))
+
+		function valTimesIndex (nums){
+			return nums.map((val, index) => val * index);
+		}
+		let arrayOfNums =[1, 2, 3];
+		let result = valTimesIndex(arrayOfNums);
+
+		console.log(result)
