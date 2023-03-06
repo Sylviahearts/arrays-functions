@@ -66,14 +66,6 @@ let fruit = ['apple', 'mango', 'banana'];
         //question 5
 		//Write a function called valTimesIndex which accepts an array of numbers and returns 
 		//a new array with each value multiplied by the index it is at in the array:
-		// function valTimesIndex(arr) {
-		// 	let newArr = [];
-		// 	for (let i = 0; i < arr.length; i++) {
-		// 	  newArr.push(arr[i] * i);
-		// 	}
-		// 	return newArr;
-		//   }
-		//   console.log(newArr(1,2,3,4))
 
 		function valTimesIndex (nums){
 			return nums.map((val, index) => val * index);
